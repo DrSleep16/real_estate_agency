@@ -5,3 +5,4 @@ from .models import Flat
 @admin.register(Flat)
 class FlatModel(admin.ModelAdmin):
     search_fields = ('town', 'address', 'owner')
+    readonly_fields = ['created_at']
